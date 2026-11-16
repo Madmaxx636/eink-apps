@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The only app in the suite that uses the network. It asks open-meteo.com for the forecast of the
+         cities you choose, and nothing else: no location permission, no account, no background updates. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/InkTheme">
+        <activity android:name=".WeatherActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DayActivity" android:exported="false" android:theme="@style/InkTheme" />
+        <activity android:name=".SatelliteActivity" android:exported="false" android:theme="@style/InkTheme" />
+        <activity android:name=".WeatherSettings" android:exported="false" android:theme="@style/InkTheme" />
+    </application>
+</manifest>
