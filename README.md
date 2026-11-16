@@ -66,6 +66,10 @@ environment variable, or `~/.minimal-launcher-keystore/keystore.properties` (`st
 is its own module (`:notes` is Ink Pad, `:calc` is Calculator) and extends `InkActivity`. Built with Android's plain
 View system and no third-party libraries.
 
+## Licence
+
+MIT. See [LICENSE](LICENSE).
+
 ## Status
 
 Built and tested on a phone and on an e-ink device by their author, not yet on a wide range of devices. Bug reports with a
